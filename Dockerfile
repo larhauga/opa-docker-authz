@@ -1,4 +1,4 @@
-FROM --platform=$BUILDPLATFORM alpine:latest AS certs
+FROM alpine:latest AS certs
 RUN apk --update add ca-certificates
 
 FROM scratch
